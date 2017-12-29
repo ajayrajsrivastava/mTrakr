@@ -21,6 +21,7 @@ var Transactions = React.createClass({
     this.setState({ transactions: newState })
   },
 
+
   render() {
     return (
       <div>
