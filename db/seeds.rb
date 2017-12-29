@@ -7,7 +7,7 @@ user = User.create!(
 
 
 [ 'Salary - Mine', 'Salary - Partner', 'Other' ].each do |category|
-  Category.create! name: category, kind: 'income', user: user
+  Category.create! name: category, kind: 'Income', user: user
 end
 
 expenses = {
@@ -18,8 +18,8 @@ expenses = {
 }
 
 expenses.each do |category|
-  parent = Category.create! name: category.first.to_s.titleize, kind: 'expense', user: user
+  parent = Category.create! name: category.first.to_s.titleize, kind: 'Expense', user: user
   category.last.each do |subcategory|
-    Category.create! name: subcategory.titleize, kind: 'expense', user: user, parent: parent
+    Category.create! name: subcategory.titleize, kind: 'Expense', user: user
   end
 end

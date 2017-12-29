@@ -10,7 +10,7 @@ module API
 
           Transaction.all.where(user_id: current_user.id).each do |transaction|
             if transaction.category.kind == 'Income'
-              total_income += transaction.amount
+              total_income  += transaction.amount
             else
               total_expense += transaction.amount
             end 
@@ -20,8 +20,6 @@ module API
           total[:expense] = total_expense
           total
         end
-
- 
       end
 
 

@@ -11,11 +11,7 @@ module API
 
         post do
           transaction = params[:transaction]
-          Transaction.create!(user_id: current_user.id,
-                              category_id: transaction[:category_id],
-                              date: transaction[:date],
-                              amount: transaction[:amount]
-                              )
+          Transaction.create!(user_id: current_user.id,category_id: transaction[:category_id],date: transaction[:date],amount: transaction[:amount])
         end
         
         delete do

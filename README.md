@@ -5,5 +5,7 @@
 3. Used React as front end framework
 
 > rake db:migrate
+
 > rails s
+
 > bundle exec rpsec (to run tests)
