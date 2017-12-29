@@ -15,9 +15,7 @@ development:
 test:  
   adapter: mysql2
   database: expense_tracker_grape_test
-  username: expense_tracker_grape_user
-  password: lucknow123
-  #username: root
+  username: root
   encoding: utf8
 
 production:
