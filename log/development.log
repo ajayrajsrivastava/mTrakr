@@ -24753,3 +24753,734 @@ Completed 200 OK in 259ms (Views: 254.3ms | ActiveRecord: 0.7ms)
 Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:02:03 +0530
   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
   [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:05:00 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 299ms (Views: 293.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:05:00 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+Started POST "/api/v1/transactions" for 127.0.0.1 at 2017-12-30 03:05:07 +0530
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (23.3ms)[0m  [1m[32mINSERT INTO `transactions` (`user_id`, `category_id`, `date`, `amount`, `created_at`, `updated_at`) VALUES (2, 7, '2017-12-30', 100.0, '2017-12-29 21:35:07', '2017-12-29 21:35:07')[0m
+  [1m[35m (36.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:05:09 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 387ms (Views: 381.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:05:09 +0530
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:05:10 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 277ms (Views: 272.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:05:10 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:05:12 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 295ms (Views: 289.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:05:12 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (4.0ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/categories" for 127.0.0.1 at 2017-12-30 03:05:13 +0530
+Processing by SiteController#categories as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/categories.html.erb within layouts/application
+  Rendered site/categories.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 276ms (Views: 270.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2017-12-30 03:05:13 +0530
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`user_id` = 2 ORDER BY `categories`.`name` ASC[0m
+Started POST "/api/v1/categories" for 127.0.0.1 at 2017-12-30 03:05:20 +0530
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (40.2ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Sal', 'Income', 2, '2017-12-29 21:35:20', '2017-12-29 21:35:20')[0m
+  [1m[35m (98.5ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/api/v1/categories" for 127.0.0.1 at 2017-12-30 03:05:27 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('zSal', 'Expense', 2, '2017-12-29 21:35:27', '2017-12-29 21:35:27')[0m
+  [1m[35m (75.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:05:28 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 299ms (Views: 294.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/overviews.json" for 127.0.0.1 at 2017-12-30 03:05:28 +0530
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (3.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/categories" for 127.0.0.1 at 2017-12-30 03:05:30 +0530
+Processing by SiteController#categories as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/categories.html.erb within layouts/application
+  Rendered site/categories.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 315ms (Views: 309.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2017-12-30 03:05:30 +0530
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`user_id` = 2 ORDER BY `categories`.`name` ASC[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:05:32 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 294ms (Views: 286.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:05:32 +0530
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started POST "/api/v1/transactions" for 127.0.0.1 at 2017-12-30 03:05:44 +0530
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (31.0ms)[0m  [1m[32mINSERT INTO `transactions` (`user_id`, `category_id`, `date`, `amount`, `created_at`, `updated_at`) VALUES (2, 23, '2017-12-30', 1000.0, '2017-12-29 21:35:44', '2017-12-29 21:35:44')[0m
+  [1m[35m (41.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:05:46 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 268ms (Views: 263.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:05:46 +0530
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:05:47 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 320ms (Views: 310.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/overviews.json" for 127.0.0.1 at 2017-12-30 03:05:48 +0530
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (1.1ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:05:49 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 250ms (Views: 240.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/overviews.json" for 127.0.0.1 at 2017-12-30 03:05:49 +0530
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:05:50 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (1.1ms)
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:05:50 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 393ms (Views: 386.8ms | ActiveRecord: 2.2ms)
+
+
+Completed 200 OK in 326ms (Views: 321.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/overviews.json" for 127.0.0.1 at 2017-12-30 03:05:50 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:05:51 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (61.7ms)
+Completed 200 OK in 313ms (Views: 308.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/overviews.json" for 127.0.0.1 at 2017-12-30 03:05:51 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:05:52 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 294ms (Views: 288.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:05:52 +0530
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (1.0ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/categories" for 127.0.0.1 at 2017-12-30 03:05:57 +0530
+Processing by SiteController#categories as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/categories.html.erb within layouts/application
+  Rendered site/categories.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 288ms (Views: 283.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2017-12-30 03:05:57 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`user_id` = 2 ORDER BY `categories`.`name` ASC[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:07:09 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 307ms (Views: 302.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:07:10 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:07:11 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 274ms (Views: 268.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:07:11 +0530
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:10:08 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (0.9ms)
+  [1m[36mCategory Load (8.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`name` ASC[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`name` ASC[0m
+Completed 200 OK in 30171ms (Views: 30157.4ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:10:38 +0530
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (1.2ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:10:39 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 306ms (Views: 299.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:10:42 +0530
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:10:48 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (95.5ms)
+Completed 200 OK in 459ms (Views: 454.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/overviews.json" for 127.0.0.1 at 2017-12-30 03:10:48 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:10:50 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 299ms (Views: 291.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:10:50 +0530
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/categories" for 127.0.0.1 at 2017-12-30 03:10:54 +0530
+Processing by SiteController#categories as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/categories.html.erb within layouts/application
+  Rendered site/categories.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 266ms (Views: 259.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2017-12-30 03:10:55 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`user_id` = 2 ORDER BY `categories`.`name` ASC[0m
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:10:59 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 327ms (Views: 321.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/overviews.json" for 127.0.0.1 at 2017-12-30 03:11:00 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (1.9ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:11:00 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 342ms (Views: 336.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:11:01 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/categories" for 127.0.0.1 at 2017-12-30 03:11:09 +0530
+Processing by SiteController#categories as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/categories.html.erb within layouts/application
+  Rendered site/categories.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 289ms (Views: 283.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2017-12-30 03:11:10 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`user_id` = 2 ORDER BY `categories`.`name` ASC[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:11:12 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 377ms (Views: 371.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:11:12 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started POST "/api/v1/transactions" for 127.0.0.1 at 2017-12-30 03:11:21 +0530
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `transactions` (`user_id`, `category_id`, `date`, `amount`, `created_at`, `updated_at`) VALUES (2, 28, '2017-12-30', 50000.0, '2017-12-29 21:41:21', '2017-12-29 21:41:21')[0m
+  [1m[35m (61.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:11:23 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 247ms (Views: 243.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/overviews.json" for 127.0.0.1 at 2017-12-30 03:11:23 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 28 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/categories" for 127.0.0.1 at 2017-12-30 03:11:36 +0530
+Processing by SiteController#categories as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/categories.html.erb within layouts/application
+  Rendered site/categories.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 268ms (Views: 263.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2017-12-30 03:11:36 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`user_id` = 2 ORDER BY `categories`.`name` ASC[0m
+Started GET "/overviews" for 127.0.0.1 at 2017-12-30 03:11:37 +0530
+Processing by SiteController#overviews as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/overviews.html.erb within layouts/application
+  Rendered site/overviews.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 274ms (Views: 269.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/overviews.json" for 127.0.0.1 at 2017-12-30 03:11:38 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 28 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started GET "/categories" for 127.0.0.1 at 2017-12-30 03:11:38 +0530
+Processing by SiteController#categories as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/categories.html.erb within layouts/application
+  Rendered site/categories.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 290ms (Views: 283.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2017-12-30 03:11:38 +0530
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`user_id` = 2 ORDER BY `categories`.`name` ASC[0m
+Started GET "/transactions" for 127.0.0.1 at 2017-12-30 03:11:39 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 339ms (Views: 332.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:11:39 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 28 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-12-30 03:11:44 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gNEP1i4TbHEsfe+i1GfSmvmS7CfXMqI+aLCutfuGuYKW62i9fZNz6XDMkY8J1Zd27OHOYZ4hnQtmlQT7VkUKlg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-30 03:11:44 +0530
+Processing by SiteController#transactions as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-30 03:11:44 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 261ms (Views: 248.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-12-30 03:11:53 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"961k0b/8dyl+Pz3f9brRUxa5fjdgUg6yxKCSH+itp4cMjQCVlJWVMKKxu5yj5aT7ZzK3D4+t6peJApW7guVNuA==", "user"=>{"email"=>"ajayisready@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'ajayisready@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 350ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-30 03:11:53 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 270ms (Views: 263.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:11:55 +0530
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 2[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 7 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 23 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 28 ORDER BY `categories`.`name` ASC LIMIT 1[0m
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-12-30 03:11:56 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kyjeXI26KbaAh/LnFgF3F2qqr+q4A8IVZ+H4zhy3AcTIcKEQ+QDOgh2XyC7kTgfbbD5wXdBtEaqN/VFmiAe7hg=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-30 03:11:56 +0530
+Processing by SiteController#transactions as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-30 03:11:56 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 238ms (Views: 235.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-30 03:12:00 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 251ms (Views: 249.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-12-30 03:12:01 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 271ms (Views: 267.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-30 03:12:07 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3IxVTMagt5FVv4xLSAqT/GzkHXp4Qn5KR5pWyZRWmCLdFNb3zvNEQWViLMI73TrRAIE5APGYiv/F4qSq81bJkA==", "user"=>{"email"=>"123@GMAIL.COM", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY '123@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 536ms (Views: 243.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-30 03:14:08 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2G3LSWkN3ZG4jBRCevGDupucAXlHo8jWadVTdEfM7vP1O5l02CuotodmdVAlg8yZ49EpTA+x5tWPyU+cbaDeCA==", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY '123@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 488ms (Views: 264.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-30 03:15:05 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"edmMnSf6Rr2QGCZBjahAjLTkT2lYXbJnBQxfhWsqPWVUj96gltwzmq/yR1PS2g+vzKlnXBBPnGTjEENtQUYNng==", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY '123@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 289ms (Views: 275.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-30 03:15:56 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KLic2gM45rExahx5ljaWAZdDfEW06glAxPGQT/vqMIcF7s7nsh6Tlg6AfWvJRNki7w5UcPz4J0Mi7Yyn0YYAfA==", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY '123@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 310ms (Views: 294.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-12-30 03:18:56 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ks4E+gHaPkMBVefvBxV9sUUfcbehbEQXKPUb+zHymjgHmFbHsPxLZD6/hv1YZzKSPVJZgul+ahTO6QcTG56qww==", "user"=>{"email"=>"123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY '123@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (52.9ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('123@gmail.com', '$2a$11$q7E2jZYM6NY9m8qvS5.l8u4zeo0PDCRBLRajJgvi9KY7jFaXfnf.K', '2017-12-29 21:48:56', '2017-12-29 21:48:56')[0m
+  [1m[35m (38.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 313ms (ActiveRecord: 93.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-30 03:18:56 +0530
+Processing by SiteController#transactions as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/transactions.html.erb within layouts/application
+  Rendered site/transactions.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 305ms (Views: 298.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/transactions.json" for 127.0.0.1 at 2017-12-30 03:18:59 +0530
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTransaction Load (0.7ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions` WHERE `transactions`.`user_id` = 3[0m
+Started GET "/categories" for 127.0.0.1 at 2017-12-30 03:19:16 +0530
+Processing by SiteController#categories as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering site/categories.html.erb within layouts/application
+  Rendered site/categories.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 251ms (Views: 242.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/categories.json" for 127.0.0.1 at 2017-12-30 03:19:16 +0530
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`user_id` = 3 ORDER BY `categories`.`name` ASC[0m
+  [1m[36mTransaction Load (0.8ms)[0m  [1m[34mSELECT  `transactions`.* FROM `transactions` WHERE `transactions`.`id` = 1 LIMIT 1[0m
+  [1m[36mTransaction Load (0.9ms)[0m  [1m[34mSELECT `transactions`.* FROM `transactions`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (30.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1614.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `expense_tracker_grape_development`[0m
+  [1m[35m (1007.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `expense_tracker_grape_test`[0m
+  [1m[35m (27.8ms)[0m  [1m[35mCREATE DATABASE `expense_tracker_grape_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE `expense_tracker_grape_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (420.5ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `kind` varchar(255) NOT NULL, `user_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_categories_on_user_id` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (328.4ms)[0m  [1m[35mCREATE TABLE `transactions` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `category_id` int, `date` date NOT NULL, `amount` decimal(10,2) DEFAULT '0.0' NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_transactions_on_category_id` USING btree (`category_id`),  INDEX `index_transactions_on_user_id` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (440.3ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `failed_attempts` int DEFAULT 0 NOT NULL, `unlock_token` varchar(255), `locked_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, UNIQUE INDEX `index_users_on_confirmation_token` USING btree (`confirmation_token`), UNIQUE INDEX `index_users_on_email` USING btree (`email`), UNIQUE INDEX `index_users_on_reset_password_token` USING btree (`reset_password_token`), UNIQUE INDEX `index_users_on_unlock_token` USING btree (`unlock_token`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (864.4ms)[0m  [1m[35mALTER TABLE `categories` ADD CONSTRAINT `fk_rails_b8e2f7adfc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (670.9ms)[0m  [1m[35mALTER TABLE `transactions` ADD CONSTRAINT `fk_rails_0ea2ad3927`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (713.9ms)[0m  [1m[35mALTER TABLE `transactions` ADD CONSTRAINT `fk_rails_77364e6416`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (246.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (63.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20171224130336)[0m
+  [1m[35m (32.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20171224125946),
+(20171224130306);
+
+[0m
+  [1m[35m (311.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (10.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (18.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-12-29 21:51:50', '2017-12-29 21:51:50')[0m
+  [1m[35m (22.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (334.2ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `kind` varchar(255) NOT NULL, `user_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_categories_on_user_id` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (329.2ms)[0m  [1m[35mCREATE TABLE `transactions` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `category_id` int, `date` date NOT NULL, `amount` decimal(10,2) DEFAULT '0.0' NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_transactions_on_category_id` USING btree (`category_id`),  INDEX `index_transactions_on_user_id` USING btree (`user_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (449.8ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `failed_attempts` int DEFAULT 0 NOT NULL, `unlock_token` varchar(255), `locked_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, UNIQUE INDEX `index_users_on_confirmation_token` USING btree (`confirmation_token`), UNIQUE INDEX `index_users_on_email` USING btree (`email`), UNIQUE INDEX `index_users_on_reset_password_token` USING btree (`reset_password_token`), UNIQUE INDEX `index_users_on_unlock_token` USING btree (`unlock_token`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (926.4ms)[0m  [1m[35mALTER TABLE `categories` ADD CONSTRAINT `fk_rails_b8e2f7adfc`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (769.8ms)[0m  [1m[35mALTER TABLE `transactions` ADD CONSTRAINT `fk_rails_0ea2ad3927`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (725.9ms)[0m  [1m[35mALTER TABLE `transactions` ADD CONSTRAINT `fk_rails_77364e6416`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (288.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (9.1ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (33.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20171224130336)[0m
+  [1m[35m (32.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20171224125946),
+(20171224130306);
+
+[0m
+  [1m[35m (299.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-12-29 21:51:55', '2017-12-29 21:51:55')[0m
+  [1m[35m (36.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'ajay@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `confirmed_at`, `created_at`, `updated_at`) VALUES ('ajay@gmail.com', '$2a$11$5w2SlybA.sUYeA4PKoryCuQyc5SAqsfIQ6PrrEZ1Yzmgf29GDZnv6', '2017-12-29 21:51:55', '2017-12-29 21:51:55', '2017-12-29 21:51:55')[0m
+  [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Salary - Mine', 'Income', 1, '2017-12-29 21:51:55', '2017-12-29 21:51:55')[0m
+  [1m[35m (31.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Salary - Partner', 'Income', 1, '2017-12-29 21:51:55', '2017-12-29 21:51:55')[0m
+  [1m[35m (60.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (29.9ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Other', 'Income', 1, '2017-12-29 21:51:55', '2017-12-29 21:51:55')[0m
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Food', 'Expense', 1, '2017-12-29 21:51:55', '2017-12-29 21:51:55')[0m
+  [1m[35m (37.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Home', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Work', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (36.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('City', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (38.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Other', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (35.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Home', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Rent', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Electricity', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Gas', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Equipment', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Other', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Telecommunication', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (39.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Phone', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Internet', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Tv', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (37.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Kids', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (35.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Diapers', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (34.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Cosmetics', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (35.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Medicines', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (35.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Toys', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (34.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Clothes', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (35.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `kind`, `user_id`, `created_at`, `updated_at`) VALUES ('Other', 'Expense', 1, '2017-12-29 21:51:56', '2017-12-29 21:51:56')[0m
+  [1m[35m (35.8ms)[0m  [1m[35mCOMMIT[0m

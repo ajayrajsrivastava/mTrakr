@@ -4,6 +4,5 @@ FactoryBot.define do
     category
     date '2017-12-28'
     amount 35.99
-    note { Faker::Hipster.sentence }
   end
 end
