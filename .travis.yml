@@ -8,4 +8,4 @@ services:
  - mysql
 
 before_install:
-  - mysql -e 'CREATE DATABASE myapp_test;'
+  - mysql -e 'CREATE DATABASE expense_tracker_grape_test;'
