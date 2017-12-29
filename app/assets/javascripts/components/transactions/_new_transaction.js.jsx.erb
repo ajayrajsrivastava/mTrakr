@@ -1,0 +1,38 @@
+var NewTransaction = React.createClass({
+  handleClick() {
+    var amount = this.refs.amount.value;
+    var date = this.refs.date.value;
+    var category_id = this.refs.category_id.value;    
+    $.ajax({
+      url: '/api/v1/transactions',
+      type: 'POST',
+      data: { transaction: { amount: amount, date: date, category_id: category_id } },
+      success: (transaction) => {
+        this.props.handleSubmit(transaction);
+      }
+    })
+  },
+
+  render() {
+    return (
+      <div>
+        <input ref='date' placeholder='Date' type='date' className='datepicker' />
+        <input ref='amount' placeholder='Amount' type='number' step='0.01' min='0' />
+        <%p Category.all %>
+        
+        <select ref='category_id'>
+          <% Category.all.each do |category| %>
+            <option value='<%= category.id %>'><%= category.name %></option>
+          <% end %>
+        </select>
+        
+        
+        <button onClick={this.handleClick} className='btn waves-effect waves-light'>Save</button>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      </div>
+    )
+  }
+})

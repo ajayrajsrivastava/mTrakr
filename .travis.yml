@@ -1,0 +1,10 @@
+language: ruby
+
+rvm:
+ - 2.2
+
+services:
+ - mysql
+
+before_install:
+  - mysql -e 'CREATE DATABASE myapp_test;'

@@ -1,0 +1,27 @@
+default: &default
+  adapter: mysql2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  username: expense_tracker_grape_user
+  password: lucknow123
+  socket: /var/run/mysqld/mysqld.sock
+
+  pool: 5
+
+development:
+  <<: *default
+  database: expense_tracker_grape_development
+
+test:
+  <<: *default
+  database: expense_tracker_grape_test
+
+#test:  #Travis CI config
+#  adapter: mysql2
+#  database: myapp_test
+#  username: root
+#  encoding: utf8
+
+production:
+  <<: *default
+  database: expense_tracker_grape_production
