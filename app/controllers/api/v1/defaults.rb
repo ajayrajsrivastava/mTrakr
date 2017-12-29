@@ -8,17 +8,10 @@ module API
         version "v1", using: :path
         default_format :json
         format :json
-#       formatter :json, Grape::Formatter::ActiveModelSerializers
 
         helpers do
-
           def warden
             env['warden']
-          end
-
-          def authenticated
-            return true if warden.authenticated?
-            params[:access_token] && @user = User.find_by_authentication_token(params[:access_token])
           end
 
           def current_user
@@ -33,7 +26,6 @@ module API
           def logger
             Rails.logger
           end
-
         end
 
         rescue_from ActiveRecord::RecordNotFound do |e|

@@ -16,6 +16,5 @@
 //= require materialize-sprockets
 //= require react
 //= require react_ujs
-//= require loader
 //= require components
 //= require_tree .

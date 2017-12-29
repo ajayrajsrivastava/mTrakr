@@ -4,8 +4,6 @@ module API
       include API::V1::Defaults
 
       resource :overviews do
-        
-        #INDEX
         get  do
           total_income  = 0
           total_expense = 0

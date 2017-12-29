@@ -39,14 +39,6 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.include FactoryBot::Syntax::Methods 
   config.include Rails.application.routes.url_helpers
-  config.include Warden::Test::ControllerHelpers, type: :controller
-
-  [:controller, :view, :request].each do |type|
-    config.include ::Rails::Controller::Testing::TestProcess, type: type
-    config.include ::Rails::Controller::Testing::TemplateAssertions, type: type
-    config.include ::Rails::Controller::Testing::Integration, type: type
-  end
-
   
   #config.before do
   #  FactoryBot.find_definitions

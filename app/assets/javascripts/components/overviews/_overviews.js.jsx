@@ -6,14 +6,10 @@ var Overviews = React.createClass({
   componentDidMount() {
     $.getJSON('/api/v1/overviews.json', (response) => { this.setState({ overviews: response }) });
     $(document).ready(function() {
-      $(".button-collapse").sideNav();
-      $('select').material_select();
-      $('ul.tabs').tabs();
-      $('.datepicker').pickadate({
-        selectMonths: true,
-        selectYears: 15
-      });
-    });
+    $(".button-collapse").sideNav();
+    $('select').material_select();
+    $('ul.tabs').tabs();
+  });
   },
 
   handleSubmit(overview) {
@@ -27,7 +23,7 @@ var Overviews = React.createClass({
         <h5>Overview</h5>
         <br/>
         <br/>
-        <AllOverviews overviews={this.state.overviews} />
+        <MainOverviews overviews={this.state.overviews} />
       </div>
     )
   }

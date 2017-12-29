@@ -4,14 +4,11 @@ module API
       include API::V1::Defaults
 
       resource :transactions do
-        
-        #INDEX
         get  do
           transaction = Transaction.all.where(user_id: current_user.id).to_json( include: { category: { only: :name } })         
           JSON.parse(transaction)
         end
 
-        #CREATE
         post do
           transaction = params[:transaction]
           Transaction.create!(user_id: current_user.id,

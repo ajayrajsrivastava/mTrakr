@@ -1,4 +1,4 @@
-var AllOverviews = React.createClass({
+var MainOverviews = React.createClass({
   render() {
     return (
       <div>

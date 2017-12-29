@@ -13,27 +13,20 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'react-rails'
 gem 'responders'
+
+gem 'react-rails'
 gem 'mysql2'
-
 gem 'grape'
-gem 'grape-active_model_serializers'
-gem 'active_model_serializers'
-
 gem 'hashie-forbidden_attributes'
 gem 'rack-cors', :require => 'rack/cors'
-gem "bootstrap-sass-rails"
-
 gem 'materialize-sass'
 gem 'material_icons'
 gem 'devise'
 
 group :development, :test do
-  gem 'pry'
   gem 'warden-rspec-rails'
   gem 'rspec-rails'
-  gem 'rails-controller-testing', require: false
   gem 'factory_bot_rails'
   gem 'faker'
 end
