@@ -21,7 +21,6 @@ module API
           Category.destroy(params[:id])
         end
 
-        
 
       end
 
