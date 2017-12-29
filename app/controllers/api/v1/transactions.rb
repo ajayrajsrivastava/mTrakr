@@ -17,7 +17,11 @@ module API
                               amount: transaction[:amount]
                               )
         end
- 
+        
+        delete do
+          p params
+          Transaction.destroy(params[:transaction][:id])
+        end
       end
 
 

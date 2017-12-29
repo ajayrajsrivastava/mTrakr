@@ -23,6 +23,7 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'materialize-sass'
 gem 'material_icons'
 gem 'devise'
+gem 'grape-active_model_serializers'
 
 group :development, :test do
   gem 'warden-rspec-rails'
